@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    
+    <section id="projects" class="clickable">
+        <h2>My Projects</h2>
+        <p>Click to see my projects.</p>
+    </section>
+
+    <div id="prompt" class="hidden">
+        <p>There are no available projects for now</p>
+        <button onclick="closePrompt()">Close</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script>
+        // JavaScript to handle the click event and show the prompt
+        document.getElementById("projects").addEventListener("click", function() {
+            document.getElementById("prompt").style.display = "flex";
+        });
+
+        // Function to close the prompt
+        function closePrompt() {
+            document.getElementById("prompt").style.display = "none";
+        }
+    </script>
+</body>
+</html>

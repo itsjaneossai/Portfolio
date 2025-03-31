@@ -1,0 +1,66 @@
+/* Basic styles for the website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+section {
+    margin: 40px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clickable {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clickable:hover {
+    background-color: #f0f0f0;
+}
+
+#prompt {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#prompt p {
+    margin-bottom: 20px;
+}
+
+#prompt button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#prompt button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
